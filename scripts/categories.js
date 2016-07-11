@@ -1,6 +1,9 @@
 var xmlHttp = createXmlHttpRequestObject();
 var currentCategory = "All";
 
+window.addEventListener("load",function(){	
+	getCategories();
+});
 
 function createXmlHttpRequestObject(){
 	var xmlHttp;
@@ -32,7 +35,7 @@ function createXmlHttpRequestObject(){
 function getCategories(){
 	if((xmlHttp.readyState == 0) || (xmlHttp.readyState == 4)){
 		category = currentCategory;
-		xmlHttp.open("GET","categories.php?cat="+category,true);
+		xmlHttp.open("GET","php/categories.php?cat="+category,true);
 		xmlHttp.onreadystatechange = displayCategories;
 		xmlHttp.send(null);
 	}

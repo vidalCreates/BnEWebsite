@@ -3,9 +3,7 @@ window.addEventListener("load",function(){
 	var load_screen = document.getElementById("loadscreen");
 	setTimeout(function(){
 		$("#loadscreen").fadeToggle(1000);
-	},1000);
-	getCategories();
-	getProducts();
+	},500);
 });
 
 $(function(){

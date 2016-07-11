@@ -1,5 +1,8 @@
 var xmlHttp2 = createXmlHttpRequestObject();
 
+window.addEventListener("load",function(){	
+	getProducts();
+});
 
 function createxmlHttpRequestObject(){
 	var xmlHttp2;
@@ -31,7 +34,7 @@ function createxmlHttpRequestObject(){
 function getProducts(){
 	if((xmlHttp2.readyState == 0) || (xmlHttp2.readyState == 4)){
 		category = currentCategory;
-		xmlHttp2.open("GET","products.php?cat="+category,true);
+		xmlHttp2.open("GET","php/products.php?cat="+category,true);
 		xmlHttp2.onreadystatechange = displayProductList;
 		xmlHttp2.send(null);
 	}
