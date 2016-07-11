@@ -1,3 +1,5 @@
+var hosted = false;
+
 ////////////////////screen loading animation////////////////////
 window.addEventListener("load",function(){
 	var load_screen = document.getElementById("loadscreen");
