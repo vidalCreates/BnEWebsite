@@ -105,10 +105,10 @@ body{
 }
 
 #HeadingText{
-	position:absolute;
-	top:25%;
-	left:10%;
-	width:80%;
+	position:relative;
+	top:100px;
+	width:100%;
+	float:right;
 	text-align: center;
 	font-size: 50px;
 	color:white;
@@ -117,12 +117,24 @@ body{
 
 #SubHeadingText{
 	position:relative;
-	width:80%;
-	left:10%;
+	width:100%;
+	float:right;
 	margin-bottom: 50px;
 	text-align: center;
-	font-size: 40px;
+	font-size: 30px;
 	color:#588c7e;
+}
+
+#Content{
+	position:relative;
+	top:75px;
+	width:80%;
+	max-width: 500px;
+	margin:auto;
+	color:white;
+	text-align: left;
+	font-family: sanchez;
+	font-size: 15px;
 }
 
 #nextSymbol{
@@ -132,22 +144,24 @@ body{
 /*button to see more information*/
 .more{
 	position:relative;
-	float:right;
-	right:0px;
+	width:100%;
+	margin:auto;
+	height:58px;
 	font-size: 35px;
 }
 .more>button{
+	position:relative;
 	background-color: black;
 	border-color: black;
 	border-radius: 10px;
+	top:0px;
 	width:150px;
-	height:58px;
+	height:100%;
 	opacity:1;
 }
 
-
 #moreText{
-	position:absolute;
+	position:relative;
 	float:left;
 	top:0px;
 	color: #8c4646;

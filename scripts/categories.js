@@ -1,6 +1,5 @@
 var xmlHttp = createXmlHttpRequestObject();
 var currentCategory = "All";
-var hosted = true;
 
 window.addEventListener("load",function(){	
 	getCategories();
